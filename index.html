@@ -691,7 +691,7 @@ footer .f-formula {
           <div id="j-result" style="display:none;">
             <div class="result-main">
               <div class="r-eyebrow">Jarak Tempuh Kendaraan</div>
-              <div class="r-value" id="j-res-val">—<span class="r-unit" id="j-res-unit">km</span></div>
+              <div class="r-value" id="j-res-val">—<span class="r-unit">km</span></div>
               <div class="r-formula" id="j-res-formula">d = n × 2πr</div>
             </div>
             <div class="result-grid">
@@ -969,7 +969,6 @@ function hitungJarak() {
 
   document.getElementById('j-res-val').innerHTML =
     fmt(d_out, 4) + '<span class="r-unit">' + outUnit + '</span>';
-  document.getElementById('j-res-unit').textContent = outUnit;
   document.getElementById('j-res-formula').textContent =
     'd = ' + fmt(n, 0) + ' \u00d7 2\u03c0 \u00d7 ' + (r_m * 100).toFixed(2) + ' cm';
 
